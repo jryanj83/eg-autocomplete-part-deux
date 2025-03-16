@@ -1,5 +1,5 @@
 import AddressLookupWrapper from "@/section/address-lookup/address-lookup-wrapper";
-import type { UserData } from "@/section/address-lookup/types";
+import type { UserData } from "./types";
 
 // Mark this route as dynamic to avoid stale data
 export const dynamic = 'force-dynamic';

@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { Container, Box, Autocomplete, TextField } from "@mui/material";
 import { DataGrid, type GridColDef, type GridRowParams } from "@mui/x-data-grid";
-import type { UserData } from "./types";
+import type { UserData } from "@/app/types";
 import { AddressLookupDrawer } from "./address-lookup-drawer";
 import { formatName } from "@/utils/format-name";
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import AddressLookupWrapper from '../address-lookup-wrapper';
-import type { UserData } from '../types';
+import type { UserData } from '@/app/types';
 import { ComponentType } from 'react';
 
 // Mock next/dynamic

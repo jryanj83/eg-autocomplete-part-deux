@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import AddressLookupSection from '../address-lookup-section';
-import type { UserData } from '../types';
+import type { UserData } from '@/app/types';
 
 // Mock the MUI components
 jest.mock('@mui/material', () => ({
@@ -55,7 +55,7 @@ jest.mock('@mui/x-data-grid', () => ({
 }));
 
 // Mock the AddressLookupDrawer component
-jest.mock('./address-lookup-drawer', () => ({
+jest.mock('../address-lookup-drawer', () => ({
   AddressLookupDrawer: ({ selectedUser, onClose }: { 
     selectedUser: UserData | null;
     onClose: () => void;

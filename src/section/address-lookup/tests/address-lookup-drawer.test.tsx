@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { AddressLookupDrawer } from '../address-lookup-drawer';
-import type { UserData } from '../types';
+import type { UserData } from '@/app/types';
 
 // Mock the components
 jest.mock('@/components/todo-list/todo-list', () => {
