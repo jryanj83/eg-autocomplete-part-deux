@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EG Autocomplete Part Deux
+
+A Next.js application that provides an address lookup functionality with autocomplete search capabilities.
+
+## Project Overview
+
+This application allows users to:
+- Search and filter user data using an autocomplete search field that updates results in real-time
+- View user information in a responsive data grid with sortable columns
+- Filter results by name or email address with instant feedback
+- Click on any user row to view detailed information including:
+  - Full contact details (phone, email, website)
+  - Complete address information with street, city, and zip code
+  - Company information including company name and business details
+  - Make aditional API call to get users todo list
+- Navigate between search results and detailed views seamlessly
+
+The project demonstrates:
+- React with TypeScript implementation
+- Material UI v6 integration
+- Client-side filtering and search functionality with optimized performance
+- Server side and client side data fetching with error handling and loading states
+- Component composition and separation of concerns
+- Drawer-based UI for detailed information display
+- Comprehensive test coverage using Jest and React Testing Library
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **UI Library**: Material UI v6
+- **State Management**: React Query
+- **Testing**: Jest and React Testing Library
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Testing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run the test suite:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm test
+```
